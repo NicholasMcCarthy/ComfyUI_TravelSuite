@@ -1,11 +1,12 @@
 # ComfyUI_TravelSuite
 
-ComfyUI custom nodes to apply various latent travel techniques
-## Nodes:
+ComfyUI custom nodes to apply various latent travel techniques.
 
-LatentTravel : travel between different latent spaces using a range of blend and travel modes.
+## LatentTravel Node
 
-### Node Inputs
+Travel between different latent spaces using a range of blend and travel modes.
+
+*** Node Inputs ***
 - **A, B**: Latent variables needed for the process.
 - **steps**: Integer representing the number of steps. This includes the two input latents A and B which will always be the first and last latents. The default value is 5. It should be within the range [0,10000].
 - **factor**: A floating-point value with a default of 0.5. This value depends on the travel_mode specified
@@ -24,11 +25,11 @@ LatentTravel : travel between different latent spaces using a range of blend and
 - **prefix**: String for prefixing the generated files. By default, this is 'travel'. 
 - **write_images**: Bool indicating whether to write output images.  Requires VAE input.
 
-### Node Inputs
+*** Node Outputs ***
+
 - **LATENTS**: Resulting travel latents. There will be `steps` latents, and the first and last will be the input `A` and `B`.
 - **IMAGES**: Tensor images, if `output_images=True`. Requires VAE.
 - **FILEPATHS**: List of filepaths produced if `write_images=True`.
 
 
 `[Workflow Image](workflow.png)`
-
