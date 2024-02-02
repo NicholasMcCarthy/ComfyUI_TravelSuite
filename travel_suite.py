@@ -18,12 +18,12 @@ class LatentTravel:
                 "blend_mode": ( ["lerp", "slerp", "add", "multiply", "divide", "subtract", "overlay", "hard_light",
                            "soft_light", "screen", "linear_dodge", "difference", "exclusion", "random"],),
                 "travel_mode": ( ['linear', 'hinge', 'circle', 'norm', 'quadratic', 'cubic', 'quartic', 'geometric'],),
-                "reflect_travel": ("BOOL", {"default": True}),
+                "reflect_travel": ("BOOLEAN", {"default": True}),
                 "vae": ("VAE",),
-                "output_images": ("BOOL", {"default": False}),
+                "output_images": ("BOOLEAN", {"default": False}),
                 "filepath": ("STRING", {"default": "output/travel"}),
                 "prefix": ("STRING", {"default": "travel"}),
-                "write_images": ("BOOL", {"default": False}),
+                "write_images": ("BOOLEAN", {"default": False}),
             }
         }
 
