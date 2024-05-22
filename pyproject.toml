@@ -1,0 +1,15 @@
+[project]
+name = "comfyui_travelsuite"
+description = "ComfyUI custom nodes to apply various latent travel techniques."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["torch", "numpy", "Pillow", "scipy"]
+
+[project.urls]
+Repository = "https://github.com/NicholasMcCarthy/ComfyUI_TravelSuite"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI_TravelSuite"
+Icon = ""
